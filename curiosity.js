@@ -342,7 +342,7 @@ const texto = `Menu - Curiosity
 │  ◦ ${prefix}getcase 
 │  ◦ ${prefix}addcase 
 └  ◦ Propietario`
-await client.sendMessage(m.chat, {text: texto, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'CuriosityBot', newsletterJid: "120363167110224268@newsletter", }, externalAdReply: { title: `© CuriosityBot-MD`, body: '', thumbnailUrl: 'https://qu.ax/lFTW.jpeg', sourceUrl: 'https://github.com/AzamiJs', mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
+await client.sendMessage(m.chat, {text: texto, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Taibot', newsletterJid: "120363167110224268@newsletter", }, externalAdReply: { title: `© Taibot`, body: '', thumbnailUrl: 'https://qu.ax/edDv.png', sourceUrl: 'https://qu.ax/edDv.png', mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
 }
 break
 
@@ -360,7 +360,7 @@ try {
 let res = await fetch('https://api.github.com/repos/AzamiJs/CuriosityBot-MD')
 let json = await res.json()
 let git = `*乂  Bot  -  Script*\n\n· *Nombre*: ${json.name}\n· *Visitantes*: ${json.watchers_count}\n· *Peso*: ${(json.size / 1024).toFixed(2)} MB\n· *Actualizado*: ${moment(json.updated_at).format('DD/MM/YY - HH:mm:ss')}\n· *Url* : ${json.html_url}\n\n	   ${json.forks_count} Forks · ${json.stargazers_count} Stars · ${json.open_issues_count} Issues`
-await client.sendMessage(m.chat, {text: git, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'CuriosityBot', newsletterJid: "120363167110224268@newsletter", }, externalAdReply: { title: `© CuriosityBot-MD`, body: '', thumbnailUrl: 'https://qu.ax/lFTW.jpeg', sourceUrl: 'https://github.com/AzamiJs', mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
+await client.sendMessage(m.chat, {text: git, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Taibot', newsletterJid: "120363167110224268@newsletter", }, externalAdReply: { title: `© CuriosityBot-MD`, body: '', thumbnailUrl: 'https://qu.ax/edDv.png', sourceUrl: 'https://github.com/TaiForgor', mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
 } catch (e) {
 m.reply(e)
 }
@@ -555,7 +555,7 @@ case 'gitclone': {
 const fetch = require('node-fetch')
 
 if (!args[0]) {
-return m.reply('Ingrese el enlace de un *repositorio* de *GitHub*\n\n`Ejemplo`: .gitclone https://github.com/AzamiJs/CuriosityBot-MD')
+return m.reply('Ingrese el enlace de un *repositorio* de *GitHub*\n\n`Ejemplo`: .gitclone https://github.com/TaiForgor/TaiRemembered')
 }
 if (!args[0].includes('github.com')) {
 return m.reply('Enlace no válido. Compruebe el enlace')
@@ -1170,7 +1170,7 @@ let sticker3 = `${vs}\n${pushname}\n${fecha}\n${dias}\nZam`
 
 if (/image/.test(mime)) {
 media = await quoted.download()  
-let encmedia = await client.sendImageAsSticker(m.chat, media, m, { packname: sticker2, author: sticker3, contextInfo: {forwardingScore: 9999999, isForwarded: true, externalAdReply:{ showAdAttribution: false, title: wm, mediaType: 2, sourceUrl: 'https://github.com/AzamiJs', thumbnailUrl: 'https://qu.ax/lFTW.jpeg'}}})
+let encmedia = await client.sendImageAsSticker(m.chat, media, m, { packname: sticker2, author: sticker3, contextInfo: {forwardingScore: 9999999, isForwarded: true, externalAdReply:{ showAdAttribution: false, title: wm, mediaType: 2, sourceUrl: 'https://github.com/TaiForgor', thumbnailUrl: 'https://qu.ax/edDv.png'}}})
 await fs.unlinkSync(encmedia)  
 } else if (/video/.test(mime)) {
 if ((quoted.msg || quoted).seconds > 20) {
@@ -1178,7 +1178,7 @@ return m.reply('El video no puede ser muy largo')
 }
 media = await quoted.download()
 
-let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: sticker2, author: sticker3, contextInfo: {forwardingScore: 9999999, isForwarded: true, externalAdReply:{ showAdAttribution: false, title: wm, mediaType: 2, sourceUrl: 'https://github.com/AzamiJs', thumbnailUrl: 'https://qu.ax/lFTW.jpeg'}}})
+let encmedia = await client.sendVideoAsSticker(m.chat, media, m, { packname: sticker2, author: sticker3, contextInfo: {forwardingScore: 9999999, isForwarded: true, externalAdReply:{ showAdAttribution: false, title: wm, mediaType: 2, sourceUrl: 'https://github.com/TaiForgor', thumbnailUrl: 'https://qu.ax/edDv.png'}}})
 await new Promise((resolve) => setTimeout(resolve, 2000))
 await fs.unlinkSync(encmedia)  
 } else {
