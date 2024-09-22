@@ -2,17 +2,15 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 global.owner = [
-['5214434703586', true], 
-['5492266613038'], 
-['573147616444']
+['584166562349', true], 
 ]
 
-global.wm = '© CuriosityBot-MD'
+global.wm = '© Taibot'
 global.prefa = '.'
 global.session = 'session'
 global.vs = '2.0.0'
-global.author = 'zam'
-global.lolkey = 'GataDiosV3'
+global.author = 'Tai'
+global.lolkey = 'TaiForgor'
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
