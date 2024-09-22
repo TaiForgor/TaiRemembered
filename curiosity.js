@@ -93,18 +93,18 @@ mute: false
 }
 
 global.mess = {
-admin: 'Debes ser administrador para ejecutar esta función',
-botAdmin: 'El bot debe ser administrador para ejecutar la función',
-owner: 'Solo mi propietario puede hacer uso de este comando',
-group: 'Esta función sólo funciona en chats grupales', 
-private: 'Esta función sólo funciona en chats privados',
-wait: '`Cargando...`'
+admin: 'Debes ser administrador para ejecutar esta función, tontit@',
+botAdmin: 'El bot debe ser administrador para ejecutar la función, tontit@',
+owner: 'Solo mi propietario puede hacer uso de este comando, tontit@',
+group: 'Esta función sólo funciona en chats grupales, tontit@', 
+private: 'Esta función sólo funciona en chats privados, tontit@',
+wait: '`Cargando, perate ahi...`'
 }
 
-const link = 'https://whatsapp.com/channel/0029VaB4w2ZFHWpwgyEe3w2k'
-const fotos = 'https://qu.ax/lFTW.jpeg'
+const link = 'https://qu.ax/edDv.png'
+const fotos = 'https://qu.ax/edDv.png'
 const Title = wm
-const Body = 'Zam'
+const Body = 'Tai'
 
 if (m.message) {
 const fecha = chalk.bold.magentaBright(`\nFecha: ${chalk.whiteBright(moment().format('DD/MM/YY HH:mm:ss'))}`)
